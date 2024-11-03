@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #383838;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%; /* Full width on small screens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth hover effect */
+    color: #383838;
+}
+
+.contact:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 120px); /* Responsive width calculation */
+    max-width: 200px; /* Limit max width */
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .contact {
+        width: 100%; /* Full width for small screens */
+        margin: 5px 0; /* Less margin on small screens */
+    }
+
+    input {
+        width: calc(100% - 20px); /* Adjust input field width */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    button {
+        width: 100%; /* Button full width on small screens */
+        margin-top: 10px; /* Spacing above button */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller heading on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    input {
+        width: 100%}
+
+    button {
+        width: auto; /* Default width for buttons on medium screens */
+    }
+}
